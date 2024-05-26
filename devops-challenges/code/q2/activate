@@ -1,0 +1,2 @@
+#!/bin/bash 
+./runscript.sh backup.tar.gz anonymous no-team
