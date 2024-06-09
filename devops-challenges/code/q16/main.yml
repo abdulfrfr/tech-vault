@@ -8,6 +8,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      name: Checkout Repo
 
     - name: Run Tests
       run: |
@@ -16,7 +17,7 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        dockr build . -t broken-image
+        docker build . -t broken-image
 
     - name: Push to DockerHub
       run: |
